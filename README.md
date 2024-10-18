@@ -1,3 +1,3 @@
-# Arken Seer
+# Cerebro Protocol
 
-Arken Seer is an oracle in the Arken Realms network.
+Cerebro is an agent swarm in the Arken Realms network.

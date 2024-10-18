@@ -1,5 +1,5 @@
 {
-  "name": "@arken/seer-protocol",
+  "name": "@arken/cerebro-protocol",
   "version": "0.1.0",
   "main": "src/index.ts",
   "scripts": {},
