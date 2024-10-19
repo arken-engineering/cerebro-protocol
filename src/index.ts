@@ -25,6 +25,16 @@ export const createRouter = (service: any) =>
       )
       .query(({ input, ctx }) => (service.ask as any)(input, ctx)),
 
+    exec: procedure
+      .input(
+        z.object({
+          agent: z.string().describe('agent'),
+          method: z.string().describe('method'),
+          params: z.array(z.any()).optional().describe('params'),
+        })
+      )
+      .query(({ input, ctx }) => (service.exec as any)(input, ctx)),
+
     info: procedure.query(({ input, ctx }) => (service.info as any)(input, ctx)),
 
     auth: procedure
